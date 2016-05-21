@@ -13,9 +13,14 @@ function swapStyleSheet (sheet) {
 }
 function LoadNextArtist () {
     console.log(" hello next artist");
+    $("div.g").removeClass("confetti");
+
 }
 $(document).ready(function() {
   
+    for (i = 0; i < 4; i++) { 
+    //text += cars[i] + "<br>";
+    }
     var artistIndex = Math.floor(Math.random() * artists.length);
     console.log(artists[artistIndex].Name);
     var Index= Math.floor(Math.random() * 4);
@@ -44,13 +49,14 @@ $(document).ready(function() {
         console.log(pick); 
         var result = AnswerCorrect (pick, choosingArtist); 
         if (result) {
+          $("div.g").addClass("confetti");
           $('.artist').css('-webkit-filter', 'blur(0px)');
             if (lastpick!=pick){score+=100};
-          $('#score').text(score);
-           lastpick = pick;
-           setTimeout(LoadNextArtist, 3000);
+              $('#score').text(score);
+          lastpick = pick;
+          setTimeout(LoadNextArtist, 3000);
         }
-       else {
+        else {
           $(event.target).css('text-decoration', 'line-through'); 
        }
     });
