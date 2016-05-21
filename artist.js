@@ -10,7 +10,7 @@ Year: 1980, Music: "Michael.mp3"};
 
 // 90s
 
-var Nirvana = {Name: "Nirvana", Hit: "smells like team sprirt", Img: "kurtcobain.png",
+var Nirvana = {Name: "Nirvana", Hit: "Smells Like Teen Sprirt", Img: "kurtcobain.png",
 Year: 1990, Music: "Nirvana.mp3"};
 var Tupac = {Name: "Tupac", Hit: "Dear mama", Img: "tupac.png",
 Year: 1990, Music: "Tupac.mp3"};
@@ -18,7 +18,7 @@ var MariahCarey = {Name: "MariahCarey", Hit: "We Belong Together", Img: "http://
 Year: 1990, Music: "mariah.mp3"};
 var RedHotChiliPeppers = {Name: "RedHotChiliPeppers", Hit: "otherside ", Img: " http://images2.mtv.com/uri/mgid:file:docroot:mtv.com:/content/ontv/vma/2008/photo/flipbooks/best-performances/vma1995-red-hot-chili-peppe.jpg?enlarge=false&matte=true&matteColor=black&quality=0.85",
 Year: 1990, Music: "chilipeppers.mp3"};
-var StevieWonder = {Name: "StevieWonder", Hit: "isn't she lovely ", Img: "http://onmilwaukee.com/images/articles/su/summerfeststeviewonderreview/summerfeststeviewonderreview_fullsize_story1.jpg",
+var StevieWonder = {Name: "StevieWonder", Hit: "Isn't She Lovely ", Img: "steviewonder.png",
 Year: 1970, Music: "steviewonder.mp3"};
 var JohnLennon = {Name: "JohnLennon", Hit: "Starting over", Img: "johnlennon.png",
 Year: 1970, Music: "johnlennon.mp3"};

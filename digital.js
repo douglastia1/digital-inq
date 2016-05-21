@@ -20,23 +20,36 @@ $(document).ready(function() {
     console.log(artists[artistIndex].Name);
     var Index= Math.floor(Math.random() * 4);
     var choosingArtist = artists[artistIndex].Name;
-      $($(".d")[Index]).text(choosingArtist);
-      $("#description").text(artists[artistIndex].Hit);
- $('#music').attr('src','music/' + artists[artistIndex].Music);
+    $($(".d")[Index]).text(choosingArtist);
+    $("#description").text(artists[artistIndex].Hit);
+    $('#music').attr('src','music/' + artists[artistIndex].Music);
 
-$("#artistimage").attr("src", "img/" + artists[artistIndex].Img);
-   
+    $("#artistimage").attr("src", "img/" + artists[artistIndex].Img);
+    $(".time").text("Time warp to the " + (artists[artistIndex].Year) + "s");
+    if (artists[artistIndex].Year==2000) {
+        swapStyleSheet("00s.css");
+    
+    }
+    else if (artists[artistIndex].Year==1970) {
+        swapStyleSheet("70s.css");
+    }
+    else if (artists[artistIndex].Year==1980) {
+        swapStyleSheet("80s.css");
+    }
+    else if (artists[artistIndex].Year==1990) {
+        swapStyleSheet("90s.css");
+    }
     $(".btn").click(function() {
         var pick = $(event.target).text();
-       console.log(pick); 
+        console.log(pick); 
         var result = AnswerCorrect (pick, choosingArtist); 
-       if (result) {
+        if (result) {
           $('.artist').css('-webkit-filter', 'blur(0px)');
-          if (lastpick!=pick){score+=100};
-           $('#score').text(score);
+            if (lastpick!=pick){score+=100};
+          $('#score').text(score);
            lastpick = pick;
            setTimeout(LoadNextArtist, 3000);
-       }
+        }
        else {
           $(event.target).css('text-decoration', 'line-through'); 
        }
@@ -67,7 +80,6 @@ $("#artistimage").attr("src", "img/" + artists[artistIndex].Img);
 })();
   
 }
-     //-----------------Score-------------------//
      
 
    
