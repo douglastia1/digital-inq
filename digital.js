@@ -15,20 +15,25 @@ function LoadNextArtist () {
 }
 $(document).ready(function() {
   
-
     var artistIndex = Math.floor(Math.random() * artists.length);
-   $("#artist1").text(artists[artistIndex].Name);
-   
-   
+    console.log(artists[artistIndex].Name);
+    var Index= Math.floor(Math.random() * 4);
+    var choosingArtist = artists[artistIndex].Name;
+      $($(".d")[Index]).text(choosingArtist);
+      $("#description").text();
+
+
+$("#artistimage").attr("src","second.jpg");
    
     $(".btn").click(function() {
         var pick = $(event.target).text();
        console.log(pick); 
-        var result = AnswerCorrect (pick, "Kurt Cobain"); 
+        var result = AnswerCorrect (pick, choosingArtist); 
        if (result) {
           $('.artist').css('-webkit-filter', 'blur(0px)');
           score +=100
            $('#score').text(score);
+           $(event.target).attr('disabled', 'disabled');
            setTimeout(LoadNextArtist, 3000);
        }
        else {

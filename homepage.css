@@ -22,6 +22,8 @@ h2 {
   padding: 40px 7px 40px 15px;
   border: solid #757575 6px;
   text-decoration: none;
+  margin-left: 42%;
+  display: inline-block;
 }
 
 .btn:hover {
