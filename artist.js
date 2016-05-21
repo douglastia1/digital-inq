@@ -1,4 +1,4 @@
-var bonJovi = {Name:"Bon Jovi", Hit:"you give love a bad name", Img: "http://www.billboard.com/files/media/bon-jovi-performing-650-430.jpg",
+var bonJovi = {Name:"Bon Jovi", Hit:"you give love a bad name", Img: "bonjovi.png",
 Year: 1980, Music: "bonjovi.mp3"};
 
 var DavidBowe = {Name:"DavidBowie", Hit:"Life on Mars", Img: "bowie.png", Description: " A character actor in American movies and television.actor who portrayed Bajoran collaborator Basso Tromac in the Star Trek: Deep Space Nine episode Wrongs Darker Than Death or Night",
@@ -16,7 +16,7 @@ var Tupac = {Name: "Tupac", Hit: "Dear mama", Img: "tupac.png",
 Year: 1990, Music: "Tupac.mp3"};
 var MariahCarey = {Name: "MariahCarey", Hit: "We Belong Together", Img: "mariahcarey.png",
 Year: 1990, Music: "mariah.mp3"};
-var RedHotChiliPeppers = {Name: "RedHotChiliPeppers", Hit: "otherside ", Img: "redhotchilli.png",
+var RedHotChiliPeppers = {Name: "RedHotChiliPeppers", Hit: "otherside ", Img: "redhotchili.png",
 Year: 1990, Music: "chilipeppers.mp3"};
 var StevieWonder = {Name: "StevieWonder", Hit: "Isn't She Lovely ", Img: "steviewonder.png",
 Year: 1970, Music: "steviewonder.mp3"};

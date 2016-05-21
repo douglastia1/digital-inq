@@ -13,7 +13,7 @@ function swapStyleSheet (sheet) {
 function LoadNextArtist () {
     console.log("hello next artist");
     $("div.g").removeClass("confetti");
-
+    $('.artist').css('-webkit-filter', 'blur(30px)');
 
     for (i = 0; i < 4; i++) { 
     
@@ -63,28 +63,25 @@ function LoadNextArtist () {
 }
 
 $(document).ready(function() {
-  LoadNextArtist();
+    LoadNextArtist();
      //------------TImer---------//
-   window.onload = function(){
-  
-(function(){
-  var counter = 90;
-
-  setInterval(function() {
-    counter--;
-    if (counter >= 0) {
-      span = document.getElementById("count");
-      span.innerHTML = counter;
-    }
-    // Display 'counter' wherever you want to display it.
-    if (counter === 0) {
-        location.replace('gameover.html?score='+score);
+    window.onload = function(){
+        (function(){
+            var counter = 90;
+            setInterval(function() {
+                counter--;
+                if (counter >= 0) {
+                    span = document.getElementById("count");
+                    span.innerHTML = counter;
+                }
+                if (counter === 0) {
+                    location.replace('gameover.html?score='+score);
         
-    }
+                }
     
-  }, 1000);
+            }, 1000);
     
-})();
+    })();
   
 }
      
