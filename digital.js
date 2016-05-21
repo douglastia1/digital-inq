@@ -1,4 +1,5 @@
 var score = 0;
+var lastpick;
 function AnswerCorrect(userAnswer, rightAnswer) {
     if(userAnswer == rightAnswer){
         return true;
@@ -20,10 +21,10 @@ $(document).ready(function() {
     var Index= Math.floor(Math.random() * 4);
     var choosingArtist = artists[artistIndex].Name;
       $($(".d")[Index]).text(choosingArtist);
-      $("#description").text();
+      $("#description").text(artists[artistIndex].Hit);
 
 
-$("#artistimage").attr("src","second.jpg");
+$("#artistimage").attr("src", "img/" + artists[artistIndex].Img);
    
     $(".btn").click(function() {
         var pick = $(event.target).text();
@@ -31,9 +32,9 @@ $("#artistimage").attr("src","second.jpg");
         var result = AnswerCorrect (pick, choosingArtist); 
        if (result) {
           $('.artist').css('-webkit-filter', 'blur(0px)');
-          score +=100
+          if (lastpick!=pick){score+=100};
            $('#score').text(score);
-           $(event.target).attr('disabled', 'true');
+           lastpick = pick;
            setTimeout(LoadNextArtist, 3000);
        }
        else {
