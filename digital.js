@@ -1,6 +1,7 @@
 function AnswerCorrect(userAnswer, rightAnswer) {
     if(userAnswer == rightAnswer){
-        alert("Right");
+        alert("Right")
+        
     } else {
         alert("Wrong");
     }
@@ -9,9 +10,9 @@ function AnswerCorrect(userAnswer, rightAnswer) {
 $(document).ready(function() {
     $("button").click(function() {
         var pick = $(event.target).text();
-       console.log(pick);  
+       console.log(pick); 
     });
-   
+     //------------TImer---------//
    window.onload = function(){
   
 (function(){
@@ -26,6 +27,7 @@ $(document).ready(function() {
     // Display 'counter' wherever you want to display it.
     if (counter === 0) {
         alert('this is where it happens');
+        $("div").addClass("confetti");
         clearInterval(counter);
     }
     
@@ -34,6 +36,12 @@ $(document).ready(function() {
 })();
   
 }
-
+     //-----------------Score-------------------//
+     var score = 0;
+ $('button').click(function() {
+     
+     
+    $('#score').text(score++);
+});
    
 })

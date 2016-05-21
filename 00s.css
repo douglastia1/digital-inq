@@ -1,0 +1,28 @@
+body {
+    background-image: url("img/00sbackground.jpg");
+    font-family: 'Bubblegum Sans', cursive;
+}
+
+
+h1{
+    color: white;
+}
+h4{
+    color: white;
+}
+.info {
+    background-color: #F23A99;
+    border-style: outset;
+    border-color: #F23A90;
+}
+.col-md-8 {
+    color: white;
+}
+.artist {
+    max-height: 560px;
+    -webkit-filter: blur(30px);
+}
+
+p {
+    color: white;
+}
