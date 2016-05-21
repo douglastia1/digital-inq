@@ -14,9 +14,9 @@ var Nirvana = {Name: "Nirvana", Hit: "Smells Like Teen Sprirt", Img: "kurtcobain
 Year: 1990, Music: "Nirvana.mp3"};
 var Tupac = {Name: "Tupac", Hit: "Dear mama", Img: "tupac.png",
 Year: 1990, Music: "Tupac.mp3"};
-var MariahCarey = {Name: "MariahCarey", Hit: "We Belong Together", Img: "http://images.starpulse.com/pictures/2016/02/21/previews/Mariah%20Carey-PRN-119441.jpg",
+var MariahCarey = {Name: "MariahCarey", Hit: "We Belong Together", Img: "mariahcarey.png",
 Year: 1990, Music: "mariah.mp3"};
-var RedHotChiliPeppers = {Name: "RedHotChiliPeppers", Hit: "otherside ", Img: " http://images2.mtv.com/uri/mgid:file:docroot:mtv.com:/content/ontv/vma/2008/photo/flipbooks/best-performances/vma1995-red-hot-chili-peppe.jpg?enlarge=false&matte=true&matteColor=black&quality=0.85",
+var RedHotChiliPeppers = {Name: "RedHotChiliPeppers", Hit: "otherside ", Img: "redhotchilli.png",
 Year: 1990, Music: "chilipeppers.mp3"};
 var StevieWonder = {Name: "StevieWonder", Hit: "Isn't She Lovely ", Img: "steviewonder.png",
 Year: 1970, Music: "steviewonder.mp3"};
