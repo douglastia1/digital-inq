@@ -3,13 +3,16 @@
     <head>
         <link href='https://fonts.googleapis.com/css?family=Bubblegum+Sans' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="90s.css">
+        <link  id="pagestyle" rel="stylesheet" type="text/css" href="90s.css">
+          <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="digital.js"></script>
     </head>
     <body class="90s">
         <div class="row info">
             <div class="container">
                 <div class="col-md-4">
-                    <h1>Timer:</h1>
+                    <h1>Timer: <span id="count"> 90</span> secondes</h1>
                 </div>
                 <div class="col-md-4">
                     <h1>Time Warp to the 90s</h1>
@@ -30,10 +33,10 @@
             <div class="container">
                 <div class="col-md-8">
                     <ol>
-                        <li class="btn">Jennifer Lopez</li>
-                        <li class="btn">Kanye West</li>
-                        <li class="btn">Kurt Cobain</li>
-                        <li class="btn">Beyonce</li>
+                        <li class="btn" id = "artist1">Jennifer Lopez</li>
+                        <li class="btn" id = "artist2">Kanye West</li>
+                        <li class="btn" id = "artist3">Kurt Cobain</li>
+                        <li class="btn" id = "artist4">Beyonce</li>
                     </ol>
                 </div>
                 <div class="col-md-4">

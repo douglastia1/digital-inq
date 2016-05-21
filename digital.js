@@ -6,7 +6,9 @@ function AnswerCorrect(userAnswer, rightAnswer) {
         alert("Wrong");
     }
 }
-
+function swapStyleSheet (sheet) {
+    document.getElementById('pagestyle').setAttribute('href', sheet);
+}
 $(document).ready(function() {
     $("button").click(function() {
         var pick = $(event.target).text();
@@ -16,7 +18,7 @@ $(document).ready(function() {
    window.onload = function(){
   
 (function(){
-  var counter = 12;
+  var counter = 90;
 
   setInterval(function() {
     counter--;
@@ -26,8 +28,10 @@ $(document).ready(function() {
     }
     // Display 'counter' wherever you want to display it.
     if (counter === 0) {
-        alert('this is where it happens');
-        $("div").addClass("confetti");
+        //alert('this is where it happens');
+        swapStyleSheet('00s.css');
+        $("div.g").addClass("confetti");
+        //$("div.g").removeClass("confetti");
         clearInterval(counter);
     }
     
