@@ -2,12 +2,22 @@ body {
     background-image: url("img/90sbackground.jpg");
     font-family: 'Bubblegum Sans', cursive;
 }
-.description {
-    font-size: 50px;
-}
-h2{
+
+
+h1{
     color: white;
 }
-.container {
-    color: #F23A99;
+
+.info {
+    background-color: #F23A99;
+    border-style: outset;
+    border-color: #F23A90;
 }
+.col-md-8 {
+    color: white;
+}
+.artist {
+    max-height: 560px;
+    -webkit-filter: blur(30px);
+}
+
