@@ -67,7 +67,7 @@ $(document).ready(function() {
    window.onload = function(){
   
 (function(){
-  var counter = 90;
+  var counter = 10;
 
   setInterval(function() {
     counter--;
@@ -77,12 +77,8 @@ $(document).ready(function() {
     }
     // Display 'counter' wherever you want to display it.
     if (counter === 0) {
+        location.replace('gameover.html');
         
-        //alert('this is where it happens');
-        swapStyleSheet('00s.css');
-        $("div.g").addClass("confetti");
-        //$("div.g").removeClass("confetti");
-        clearInterval(counter);
     }
     
   }, 1000);
