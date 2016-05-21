@@ -1,3 +1,13 @@
 body {
     background-image:url("img/gameover.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align:center;
+}
+
+h1 {
+    color: #fa3768;
+}
+h2{
+    color:#fa3768;
 }

@@ -20,6 +20,9 @@ $(document).ready(function() {
   
     for (i = 0; i < 4; i++) { 
     //text += cars[i] + "<br>";
+        var artistIndex = Math.floor(Math.random() * artists.length);
+        var choosingArtist = artists[artistIndex].Name;
+        $($(".d")[i]).text(choosingArtist);
     }
     var artistIndex = Math.floor(Math.random() * artists.length);
     console.log(artists[artistIndex].Name);
@@ -74,6 +77,7 @@ $(document).ready(function() {
     }
     // Display 'counter' wherever you want to display it.
     if (counter === 0) {
+        
         //alert('this is where it happens');
         swapStyleSheet('00s.css');
         $("div.g").addClass("confetti");
