@@ -1,18 +1,39 @@
+var score = 0;
 function AnswerCorrect(userAnswer, rightAnswer) {
     if(userAnswer == rightAnswer){
-        alert("Right")
-        
+        return true;
+
     } else {
-        alert("Wrong");
+        return false;
     }
 }
 function swapStyleSheet (sheet) {
     document.getElementById('pagestyle').setAttribute('href', sheet);
 }
+function LoadNextArtist () {
+    console.log(" hello next artist");
+}
 $(document).ready(function() {
-    $("button").click(function() {
+  
+
+    var artistIndex = Math.floor(Math.random() * artists.length);
+   $("#artist1").text(artists[artistIndex].Name);
+   
+   
+   
+    $(".btn").click(function() {
         var pick = $(event.target).text();
        console.log(pick); 
+        var result = AnswerCorrect (pick, "Kurt Cobain"); 
+       if (result) {
+          $('.artist').css('-webkit-filter', 'blur(0px)');
+          score +=100
+           $('#score').text(score);
+           setTimeout(LoadNextArtist, 3000);
+       }
+       else {
+          $(event.target).css('text-decoration', 'line-through'); 
+       }
     });
      //------------TImer---------//
    window.onload = function(){
@@ -41,11 +62,7 @@ $(document).ready(function() {
   
 }
      //-----------------Score-------------------//
-     var score = 0;
- $('button').click(function() {
      
-     
-    $('#score').text(score++);
-});
+
    
 })

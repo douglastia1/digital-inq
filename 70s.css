@@ -1,6 +1,6 @@
 body {
-    background-image: url("img/00sbackground.jpg");
-    font-family: 'Bubblegum Sans', cursive;
+    background-image: url("http://66.media.tumblr.com/tumblr_m722metIRU1rra1j7o4_1280.jpg");
+    font-family: 'Spicy Rice', cursive;
 }
 
 
@@ -11,9 +11,9 @@ h4{
     color: white;
 }
 .info {
-    background-color: #F23A09;
+    background-color: #b32424;
     border-style: outset;
-    border-color: #F23A09;
+    border-color: #b32424;
 }
 .col-md-8 {
     color: white;
@@ -37,7 +37,7 @@ p {
   font-family: Arial;
   color: #ffffff;
   font-size: 20px;
-  background: #F23A09;
+  background: #b32424;
   padding: 12px 20px 10px 20px;
   border: solid #ffffff 2px;
   text-decoration: none;
