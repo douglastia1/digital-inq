@@ -33,7 +33,7 @@ $("#artistimage").attr("src","second.jpg");
           $('.artist').css('-webkit-filter', 'blur(0px)');
           score +=100
            $('#score').text(score);
-           $(event.target).attr('disabled', 'disabled');
+           $(event.target).attr('disabled', 'true');
            setTimeout(LoadNextArtist, 3000);
        }
        else {
