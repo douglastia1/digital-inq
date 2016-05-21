@@ -22,7 +22,7 @@ $(document).ready(function() {
     var choosingArtist = artists[artistIndex].Name;
       $($(".d")[Index]).text(choosingArtist);
       $("#description").text(artists[artistIndex].Hit);
- $('#music').attr('src','audio/' + artists[artistIndex].Music);
+ $('#music').attr('src','music/' + artists[artistIndex].Music);
 
 $("#artistimage").attr("src", "img/" + artists[artistIndex].Img);
    

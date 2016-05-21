@@ -1,7 +1,7 @@
 var bonJovi = {Name:"Bon Jovi", Hit:"you give love a bad name", Img: "http://www.billboard.com/files/media/bon-jovi-performing-650-430.jpg",
-Year: 1980};
+Year: 1980, Music: "bonjovi.mp3"};
 
-var DavidBowe = {Name:"DavidBowie", Hit:"Life on Mars", Img: "bowie.png", Description: " A character actor in American movies and television.actor who portrayed Bajoran collaborator Basso Tromac in the Star Trek: Deep Space Nine episode Wrongs Darker Than Death or Night". "
+var DavidBowe = {Name:"DavidBowie", Hit:"Life on Mars", Img: "bowie.png", Description: " A character actor in American movies and television.actor who portrayed Bajoran collaborator Basso Tromac in the Star Trek: Deep Space Nine episode Wrongs Darker Than Death or Night",
 Year: 1980, Music: "bowie.mp3"};
 var Prince = {Name:"Prince", Hit:"Little Red Corvette", Img: "prince.png",
 Year: 1980, MUsic: "prince.mp3"};
@@ -14,7 +14,7 @@ var Nirvana = {Name: "Nirvana", Hit: "smells like team sprirt", Img: "kurtcobain
 Year: 1990, Music: "Nirvana.mp3"};
 var Tupac = {Name: "Tupac", Hit: "Dear mama", Img: "tupac.png",
 Year: 1990, Music: "Tupac.mp3"};
-var MariahCarey = {Name: "MariahCarey", Hit: We Belong Together", Img: "http://images.starpulse.com/pictures/2016/02/21/previews/Mariah%20Carey-PRN-119441.jpg",
+var MariahCarey = {Name: "MariahCarey", Hit: "We Belong Together", Img: "http://images.starpulse.com/pictures/2016/02/21/previews/Mariah%20Carey-PRN-119441.jpg",
 Year: 1990, Music: "mariah.mp3"};
 var RedHotChiliPeppers = {Name: "RedHotChiliPeppers", Hit: "otherside ", Img: " http://images2.mtv.com/uri/mgid:file:docroot:mtv.com:/content/ontv/vma/2008/photo/flipbooks/best-performances/vma1995-red-hot-chili-peppe.jpg?enlarge=false&matte=true&matteColor=black&quality=0.85",
 Year: 1990, Music: "chilipeppers.mp3"};
